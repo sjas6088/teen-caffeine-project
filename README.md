@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Jasnoor" content="width=device-width, initial-scale=1.0" />
   <title>Caffeine & The Teenage Heart</title>
   <style>
     body {
@@ -126,7 +126,7 @@
         <li>Launch a teen-led awareness campaign through Instagram, TikTok, and YouTube</li>
       </ul>
       <p>
-        This isn’t just a science project — it’s a call to reflect on the role of caffeine in our culture and our bodies. I believe the work can grow, expand into policy recommendations, and spark new health-conscious habits among youth. It starts with data — but it ends with impact.
+        This isn’t just a capstone project — it’s a call to reflect on the role of caffeine in our culture and our bodies. I believe the work can grow, expand into policy recommendations, and spark new health-conscious habits among youth. It starts with data — but it ends with impact.
       </p>
     </section>
   </div>
