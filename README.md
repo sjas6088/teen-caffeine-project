@@ -7,195 +7,127 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f2f5f4;
-      color: #333;
+      background-color: #fefefe;
+      color: #111;
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
     header {
-      background: #2e7d32;
-      color: white;
-      padding: 30px 20px;
+      background-color: #222;
+      color: #fff;
+      padding: 2rem 1rem;
       text-align: center;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
     }
     nav {
-      background: #1b5e20;
-      color: white;
-      padding: 12px;
+      background-color: #444;
       text-align: center;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+      padding: 1rem 0;
     }
     nav a {
       color: white;
-      margin: 0 20px;
+      margin: 0 1rem;
       text-decoration: none;
-      font-weight: 500;
-      transition: color 0.3s ease;
+      font-weight: bold;
     }
     nav a:hover {
-      color: #a5d6a7;
+      text-decoration: underline;
     }
-    .container {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-      background: #fff;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-      border-radius: 10px;
-      margin-top: 30px;
+    section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
     }
-    h1, h2, h3 {
-      color: #1b5e20;
+    h1, h2 {
+      color: #222;
     }
-    h2 {
-      border-bottom: 2px solid #c8e6c9;
-      padding-bottom: 5px;
+    .highlight {
+      background-color: #fffbe6;
+      border-left: 6px solid #ffc107;
+      padding: 1rem;
+      margin: 2rem 0;
     }
-    ul {
-      padding-left: 20px;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-      font-size: 0.95rem;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-    table thead {
-      background-color: #c8e6c9;
-    }
-    table, th, td {
-      border: 1px solid #ddd;
-    }
-    th, td {
-      padding: 12px 8px;
-      text-align: center;
-    }
-    tr:nth-child(even) {
-      background-color: #f9f9f9;
-    }
-    img {
-      max-width: 100%;
-      margin-top: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    .graph-placeholder {
+      background-color: #e0e0e0;
+      height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #555;
+      font-style: italic;
+      margin: 2rem 0;
     }
     footer {
+      background-color: #222;
+      color: white;
       text-align: center;
-      background: #e0e0e0;
-      padding: 25px;
-      margin-top: 50px;
-      font-size: 0.9rem;
+      padding: 1rem;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Caffeine & The Teenage Heart</h1>
-    <p>A Deep Dive Into How Caffeine Impacts Teen Health</p>
+    <p>Capstone by Jasnoor — A Deep Dive into the Cardiovascular Effects of Caffeine on Teens</p>
   </header>
+
   <nav>
-    <a href="#about">About</a>
+    <a href="#question">Essential Question</a>
     <a href="#method">Methodology</a>
     <a href="#data">Data</a>
-    <a href="#conclusion">Conclusion</a>
     <a href="#impact">Impact</a>
+    <a href="#future">Next Steps</a>
   </nav>
-  <div class="container">
-    <section id="about">
-      <h2>About This Project</h2>
-      <p>
-        Caffeine is the most widely used psychoactive substance in the world, and teenagers are consuming it at increasing rates through coffee, energy drinks, soda, and tea. But how does this affect their developing cardiovascular systems? This project set out to explore that essential question.
-      </p>
-      <p>
-        Our investigation focused on the immediate effects of caffeine on teenage heart rate and blood pressure. The study was built on curiosity, scientific rigor, and a desire to promote honest conversations around health, habits, and long-term wellness in youth culture.
-      </p>
-    </section>
 
-    <section id="method">
-      <h2>Methodology</h2>
-      <p>
-        We conducted an observational study involving 15 teen participants (aged 15–17). Each participant:
-      </p>
+  <section id="question">
+    <h2>Essential Question</h2>
+    <p><strong>What impact does caffeine have on the heart rate and blood pressure of teenagers, and how can this influence our approach to adolescent health?</strong></p>
+  </section>
+
+  <section id="method">
+    <h2>Methodology</h2>
+    <p>I gathered data from 15 teen participants (ages 15–17) who consumed a single serving of a caffeine source — coffee, energy drinks, soda, or iced tea. Each recorded their resting heart rate and blood pressure, then recorded again 30–60 minutes post-consumption.</p>
+    <div class="highlight">
+      <strong>Tools Used:</strong>
       <ul>
-        <li>Recorded their baseline heart rate and blood pressure</li>
-        <li>Consumed a known amount of caffeine</li>
-        <li>Recorded their heart rate and blood pressure again after 30–60 minutes</li>
-        <li>Noted how they felt after caffeine intake</li>
+        <li>Digital blood pressure/heart rate monitor</li>
+        <li>Labeled caffeine source products</li>
+        <li>Data collection spreadsheet (Google Sheets)</li>
+        <li>Consent forms & timing protocol</li>
       </ul>
-      <p>
-        The caffeine sources varied (coffee, energy drinks, soda, and iced tea), and all caffeine values were verified from product labels. We ensured ethical guidelines were followed: no participants with heart conditions, and all data was collected with consent and confidentiality.
-      </p>
-    </section>
+    </div>
+  </section>
 
-    <section id="data">
-      <h2>Data & Analysis</h2>
-      <p>
-        We observed a strong trend: higher caffeine doses were linked to greater increases in heart rate and systolic blood pressure.
-      </p>
-      <!-- Table included as-is for completeness -->
-      <!-- Feel free to trim down for space or visual clarity -->
-      <!-- Same table from your last version -->
-      <!-- Keep this section unchanged if you want all participant data shown -->
-      <!-- Replace with summarized chart/graph later if desired -->
-      <!-- Table stays here -->
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Age</th>
-            <th>Gender</th>
-            <th>Caffeine Source</th>
-            <th>Caffeine (mg)</th>
-            <th>Time Taken</th>
-            <th>HR Before</th>
-            <th>BP Before</th>
-            <th>HR After</th>
-            <th>BP After</th>
-            <th>Notes</th>
-          </tr>
-        </thead>
-        <tbody>
-          <!-- Example rows -->
-          <tr><td>Maya</td><td>16</td><td>Female</td><td>Coffee</td><td>95</td><td>8:00 AM</td><td>72</td><td>110/70</td><td>88</td><td>126/78</td><td>Felt jittery in class</td></tr>
-          <!-- Add the rest of the rows from your original table -->
-        </tbody>
-      </table>
-    </section>
+  <section id="data">
+    <h2>Data & Results</h2>
+    <ul>
+      <li><strong>Energy Drinks:</strong> Increased HR by 20–25 bpm; Systolic BP rose by ~18 points</li>
+      <li><strong>Coffee:</strong> HR increased 15–18 bpm</li>
+      <li><strong>Soda/Iced Tea:</strong> Minimal change (5–8 bpm)</li>
+      <li><strong>Participant Feedback:</strong> Common effects included anxiety, jitteriness, focus, and tremors</li>
+    </ul>
+    <div class="graph-placeholder">[Bar Chart: Caffeine Type vs Heart Rate Increase]</div>
+    <div class="graph-placeholder">[Scatter Plot: Caffeine mg vs Blood Pressure Change]</div>
+  </section>
 
-    <section id="conclusion">
-      <h2>Conclusion</h2>
-      <p>
-        This study shows a clear link between caffeine intake and elevated heart rate and blood pressure in teens. The more caffeine consumed, the more pronounced the cardiovascular response. What’s important is not just the presence of caffeine, but the amount, the timing, and the individual's tolerance level.
-      </p>
-      <p>
-        For teens, who are still developing biologically and neurologically, even common products like coffee or energy drinks can cause noticeable physiological changes. These changes may be harmless short-term, but they can also indicate hidden risks, especially when compounded by stress, dehydration, or existing health conditions.
-      </p>
-    </section>
+  <section id="impact">
+    <h2>Reflection & Takeaways</h2>
+    <p>This project gave me a powerful understanding of how caffeine — something teens consume daily — can shift vital health markers. As someone interested in health science, it encouraged me to raise awareness among peers and think critically about choices we normalize in youth culture.</p>
+    <p>My goal is to empower teens with real information and help shape healthier habits.</p>
+  </section>
 
-    <section id="impact">
-      <h2>Societal Impact</h2>
-      <p>
-        Through this project, I aim to raise awareness about how everyday caffeine consumption impacts teen health. I plan to:
-      </p>
-      <ul>
-        <li>Create informational flyers for schools and cafés near campus</li>
-        <li>Present this research at youth wellness events or science fairs</li>
-        <li>Encourage peers to monitor their caffeine habits thoughtfully</li>
-        <li>Launch a teen-led awareness campaign through Instagram, TikTok, and YouTube</li>
-      </ul>
-      <p>
-        This isn’t just a capstone project — it’s a call to reflect on the role of caffeine in our culture and our bodies. I believe the work can grow, expand into policy recommendations, and spark new health-conscious habits among youth. It starts with data — but it ends with impact.
-      </p>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Caffeine_structure.svg/800px-Caffeine_structure.svg.png" alt="Caffeine Molecular Structure">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/Redbull_cans.jpg/640px-Redbull_cans.jpg" alt="Caffeine Sources">
-    </section>
-  </div>
+  <section id="future">
+    <h2>What’s Next?</h2>
+    <ul>
+      <li>Expand study with more diverse participants and schools</li>
+      <li>Develop an awareness campaign through posters, social media, and school presentations</li>
+      <li>Create a digital tracker for safe caffeine limits by age group</li>
+      <li>Work with school health staff to integrate this data into wellness education</li>
+    </ul>
+  </section>
+
   <footer>
-    <p>&copy; 2025 - Caffeine & The Teenage Heart | Created with purpose and passion</p>
+    <p>© 2025 Capstone Project by Jasnoor | Teen Health Awareness Initiative</p>
   </footer>
 </body>
 </html>
