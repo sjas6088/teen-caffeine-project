@@ -4,94 +4,121 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Caffeine & The Teenage Heart</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     :root {
-      --primary-color: #1e1e2f;
-      --accent-color: #4dd0e1;
-      --background-color: #f9f9f9;
-      --text-color: #333;
-      --section-padding: 2.5rem;
+      --primary: #1f2937;
+      --accent: #00bcd4;
+      --background: #f8fafa;
+      --card: #ffffff;
+      --text: #333;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background-color: var(--background-color);
-      color: var(--text-color);
-      margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--background);
+      color: var(--text);
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 3rem 1rem;
+      background-color: var(--primary);
+      color: #fff;
+      padding: 4rem 1rem;
       text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     }
 
     nav {
-      background-color: #2e2e40;
-      text-align: center;
+      background-color: #2b3748;
+      display: flex;
+      justify-content: center;
       padding: 1rem 0;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav a {
-      color: var(--accent-color);
-      margin: 0 20px;
+      color: var(--accent);
       text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
+      margin: 0 1.5rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
-      color: #fff;
+      color: #ffffff;
     }
 
     section {
       max-width: 1000px;
-      margin: auto;
-      padding: var(--section-padding);
+      margin: 3rem auto;
+      padding: 0 1rem;
     }
 
-    h1, h2, h3 {
-      color: var(--primary-color);
+    h2 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      border-bottom: 2px solid var(--accent);
+      display: inline-block;
+      padding-bottom: 0.2rem;
+    }
+
+    ul {
+      margin: 1rem 0 2rem 1.5rem;
     }
 
     .highlight {
-      background: #e0f7fa;
-      border-left: 6px solid var(--accent-color);
-      padding: 1rem;
-      margin: 2rem 0;
-      border-radius: 6px;
+      background-color: #e0f7fa;
+      padding: 1.5rem;
+      border-left: 6px solid var(--accent);
+      margin-top: 1rem;
+      border-radius: 8px;
     }
 
     .image {
-      margin: 2rem 0;
       text-align: center;
+      margin: 2.5rem 0;
     }
 
     .image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      max-width: 95%;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .caption {
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+      color: #666;
     }
 
     footer {
-      background-color: var(--primary-color);
+      background-color: var(--primary);
       color: white;
       text-align: center;
-      padding: 1.5rem;
+      padding: 2rem 1rem;
       margin-top: 4rem;
+    }
+
+    .card {
+      background-color: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Caffeine & The Teenage Heart</h1>
-    <p>Capstone by Jasnoor | A deep dive into how caffeine affects teen cardiovascular health</p>
+    <p>Capstone Project by Jasnoor — Studying the effects of caffeine on teenage cardiovascular health</p>
   </header>
 
   <nav>
@@ -102,62 +129,63 @@
     <a href="#future">Future</a>
   </nav>
 
-  <section id="question">
+  <section id="question" class="card">
     <h2>Essential Question</h2>
     <p><strong>What effect does caffeine have on heart rate and blood pressure in teenagers, and what does this suggest about adolescent health in a caffeine-saturated society?</strong></p>
   </section>
 
-  <section id="method">
+  <section id="method" class="card">
     <h2>Methodology</h2>
-    <p>Fifteen teenage participants, aged 15–17, consumed one of four common caffeine sources after recording baseline heart rate and blood pressure. Data was collected 30–60 minutes after intake to capture immediate effects.</p>
+    <p>Fifteen teenage participants aged 15–17 consumed caffeine from common sources (coffee, soda, iced tea, energy drinks). Heart rate and blood pressure were recorded before and 30–60 minutes after intake.</p>
     <div class="highlight">
-      <strong>Research Tools Used:</strong>
+      <strong>Research Tools:</strong>
       <ul>
-        <li>Digital Heart Rate & Blood Pressure Monitors</li>
-        <li>Consent and Participant Tracking Sheets</li>
-        <li>Google Sheets Data Log</li>
-        <li>Timer for Accurate Monitoring</li>
+        <li>Heart Rate & Blood Pressure Monitor</li>
+        <li>Google Sheets for Tracking</li>
+        <li>Stopwatch Timer</li>
+        <li>Consent Forms & Anonymized Tracking</li>
       </ul>
     </div>
   </section>
 
-  <section id="data">
-    <h2>Data Analysis</h2>
-    <p>Here are the average effects of caffeine across the sample group:</p>
+  <section id="data" class="card">
+    <h2>Data & Analysis</h2>
     <ul>
-      <li><strong>Energy Drinks:</strong> Increased heart rate by 20–25 bpm, and systolic blood pressure by up to 20 points</li>
-      <li><strong>Coffee:</strong> Raised heart rate by 15–18 bpm</li>
-      <li><strong>Soda/Iced Tea:</strong> Moderate heart rate increases of 5–8 bpm</li>
-      <li><strong>Reported Effects:</strong> Anxiety, energy spikes, jittery hands, improved focus</li>
+      <li><strong>Energy Drinks:</strong> Heart rate increase of 20–25 bpm</li>
+      <li><strong>Coffee:</strong> Increased heart rate by 15–18 bpm</li>
+      <li><strong>Soda & Iced Tea:</strong> Mild rise of 5–8 bpm</li>
+      <li><strong>Noted Symptoms:</strong> Anxiety, jitters, focus boosts, tremors</li>
     </ul>
 
     <div class="image">
-      <img src="/mnt/data/A_flat-style_digital_chart_titled_\"Average_Heart_R.png" alt="Chart showing average heart rate changes by caffeine source">
+      <img src="images/heart-rate-chart.png" alt="Heart Rate Chart">
+      <p class="caption">Average Heart Rate Change by Caffeine Type</p>
     </div>
 
     <div class="image">
-      <img src="/mnt/data/A_flat-style_digital_chart_titled_\"Scatter_plot_Heart_vs_Caffeine.png" alt="Scatter plot of heart rate vs caffeine intake">
+      <img src="images/data-table.jpg" alt="Data Table">
+      <p class="caption">Raw Participant Data: HR & BP Before/After</p>
     </div>
   </section>
 
-  <section id="impact">
+  <section id="impact" class="card">
     <h2>Reflection & Impact</h2>
-    <p>Conducting this study helped me understand how teen health can be influenced by everyday habits. Caffeine, though normalized, has real, measurable effects on the heart — especially for younger individuals.</p>
-    <p>I now want to lead campaigns at school to raise awareness and promote healthier caffeine habits, especially around exam season or sports events when usage spikes.</p>
+    <p>This study helped me realize how normalized caffeine use can hide real health impacts. Many participants experienced heart spikes or jitteriness within 30 minutes. As a teen, it's important to reflect on what we consume and how it affects our future health.</p>
   </section>
 
-  <section id="future">
+  <section id="future" class="card">
     <h2>Looking Forward</h2>
     <ul>
-      <li>Increase sample size by collaborating with more schools</li>
-      <li>Create an interactive web/app tool for tracking safe caffeine limits</li>
-      <li>Design classroom posters with key takeaways</li>
-      <li>Build a long-term awareness initiative through student health clubs</li>
+      <li>Launch awareness posters around exam week</li>
+      <li>Create an app to track safe caffeine use</li>
+      <li>Collaborate with school wellness committees</li>
+      <li>Publish research insights with a student-led journal</li>
     </ul>
   </section>
 
   <footer>
-    <p>© 2025 Jasnoor's Capstone | Teen Wellness & Scientific Awareness</p>
+    <p>© 2025 Jasnoor | Capstone Project | Teen Health Awareness</p>
   </footer>
+
 </body>
 </html>
