@@ -1,6 +1,4 @@
-from pathlib import Path
 
-# Create full HTML content by combining everything into a single complete page
 html_content = """
 <!DOCTYPE html>
 <html lang="en">
