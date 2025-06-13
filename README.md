@@ -1,6 +1,6 @@
 from pathlib import Path
 
-# Re-define HTML content after code execution environment reset
+# Create full HTML content by combining everything into a single complete page
 html_content = """
 <!DOCTYPE html>
 <html lang="en">
@@ -141,15 +141,66 @@ html_content = """
       <li><strong>Soda/Iced Tea:</strong> Moderate heart rate increases of 5–8 bpm</li>
       <li><strong>Reported Effects:</strong> Anxiety, energy spikes, jittery hands, improved focus</li>
     </ul>
+
     <div class="image">
       <img src="https://uploadthing.com/f/7f27b84f-b27e-4f17-b008-d8bc7eabfbe7-A_capstone_project_webpage_titled_%22Caffeine_%26_The_.png" alt="Caffeine Study Graph" />
     </div>
   </section>
+
+  <section id="table">
+    <h2>Participant Data Table</h2>
+    <div style="overflow-x:auto">
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th><th>Age</th><th>Gender</th><th>Caffeine Source</th><th>Caffeine (mg)</th><th>Time Taken</th><th>HR Before</th><th>BP Before</th><th>HR After</th><th>BP After</th><th>Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Maya</td><td>16</td><td>Female</td><td>Coffee</td><td>95</td><td>8:00 AM</td><td>72</td><td>110/70</td><td>88</td><td>126/78</td><td>Felt jittery in class</td></tr>
+          <tr><td>Karen</td><td>17</td><td>Male</td><td>Energy Drink</td><td>80</td><td>9:30 AM</td><td>68</td><td>112/74</td><td>90</td><td>130/82</td><td>Reported alertness, mild headache</td></tr>
+          <tr><td>Anaya</td><td>16</td><td>Female</td><td>Iced Tea</td><td>30</td><td>10:15 AM</td><td>76</td><td>108/68</td><td>82</td><td>114/72</td><td>Slight increase in focus</td></tr>
+          <tr><td>Arjun</td><td>15</td><td>Male</td><td>Soda</td><td>40</td><td>3:45 PM</td><td>70</td><td>112/74</td><td>78</td><td>120/76</td><td>No noticeable change</td></tr>
+          <tr><td>Sehej</td><td>17</td><td>Female</td><td>Energy Drink</td><td>160</td><td>6:00 PM</td><td>74</td><td>114/71</td><td>98</td><td>138/84</td><td>Felt shaky, hands trembled</td></tr>
+          <tr><td>Amraj</td><td>16</td><td>Male</td><td>Coffee</td><td>95</td><td>7:30 AM</td><td>67</td><td>108/70</td><td>85</td><td>124/76</td><td>Jittery but energized</td></tr>
+          <tr><td>Riya</td><td>15</td><td>Female</td><td>Soda</td><td>40</td><td>1:00 PM</td><td>73</td><td>106/72</td><td>80</td><td>116/75</td><td>Slightly dizzy after 20 minutes</td></tr>
+          <tr><td>Guntaj</td><td>16</td><td>Male</td><td>Energy Drink</td><td>80</td><td>10:30 AM</td><td>71</td><td>110/73</td><td>89</td><td>127/80</td><td>More energy, no side effects</td></tr>
+          <tr><td>Ravneet</td><td>15</td><td>Female</td><td>Iced Tea</td><td>30</td><td>2:00 PM</td><td>75</td><td>108/68</td><td>81</td><td>115/72</td><td>Mild boost in alertness</td></tr>
+          <tr><td>Ansh</td><td>17</td><td>Male</td><td>Energy Drink (Large)</td><td>160</td><td>5:15 PM</td><td>70</td><td>111/70</td><td>95</td><td>135/82</td><td>Anxiety spike 30 mins later</td></tr>
+          <tr><td>Raman</td><td>16</td><td>Female</td><td>Coffee</td><td>95</td><td>8:45 AM</td><td>69</td><td>107/69</td><td>87</td><td>125/76</td><td>Felt awake and productive</td></tr>
+          <tr><td>Pargat</td><td>15</td><td>Male</td><td>Soda</td><td>40</td><td>12:30 PM</td><td>68</td><td>110/72</td><td>74</td><td>115/74</td><td>No major changes</td></tr>
+          <tr><td>Jasmeet</td><td>16</td><td>Female</td><td>Iced Tea</td><td>30</td><td>3:00 PM</td><td>71</td><td>106/70</td><td>76</td><td>111/72</td><td>Light focus improvement</td></tr>
+          <tr><td>Ajit</td><td>17</td><td>Male</td><td>Coffee</td><td>95</td><td>7:45 AM</td><td>66</td><td>109/69</td><td>84</td><td>123/75</td><td>Boosted morning energy</td></tr>
+          <tr><td>Ishmeet</td><td>15</td><td>Female</td><td>Energy Drink</td><td>80</td><td>9:00 AM</td><td>73</td><td>113/72</td><td>89</td><td>128/79</td><td>Hands trembled slightly</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="impact">
+    <h2>Reflection & Impact</h2>
+    <p>Conducting this study helped me understand how teen health can be influenced by everyday habits. Caffeine, though normalized, has real, measurable effects on the heart — especially for younger individuals.</p>
+    <p>I now want to lead campaigns at school to raise awareness and promote healthier caffeine habits, especially around exam season or sports events when usage spikes.</p>
+  </section>
+
+  <section id="future">
+    <h2>Looking Forward</h2>
+    <ul>
+      <li>Increase sample size by collaborating with more schools</li>
+      <li>Create an interactive web/app tool for tracking safe caffeine limits</li>
+      <li>Design classroom posters with key takeaways</li>
+      <li>Build a long-term awareness initiative through student health clubs</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Jasnoor's Capstone | Teen Wellness & Scientific Awareness</p>
+  </footer>
 </body>
 </html>
 """
 
-# Save the final HTML file
+# Save HTML file
 output_path = Path("/mnt/data/Teen_Caffeine_Project_Full.html")
 output_path.write_text(html_content)
 
