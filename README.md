@@ -1,19 +1,24 @@
+from pathlib import Path
+
+# Recreate the enhanced, comprehensive HTML website content
+enhanced_html = """
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Caffeine & The Teenage Heart</title>
+  <title>Caffeine & The Teenage Heart - Capstone</title>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background-color: #f8f9fa;
-      color: #222;
+      padding: 0;
+      background: #f7f9fb;
+      color: #1a1a1a;
       line-height: 1.6;
     }
     header {
-      background-color: #1e1e2f;
+      background: #0f172a;
       color: white;
       padding: 3rem 1rem;
       text-align: center;
@@ -24,10 +29,13 @@
       text-align: center;
     }
     nav a {
-      color: #1e1e2f;
-      margin: 0 15px;
-      text-decoration: none;
+      color: #0f172a;
+      margin: 0 12px;
       font-weight: bold;
+      text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     section {
       max-width: 1000px;
@@ -35,10 +43,17 @@
       padding: 2rem;
     }
     h2 {
+      color: #0f172a;
       border-bottom: 2px solid #4dd0e1;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.3rem;
       margin-top: 2rem;
-      color: #1e1e2f;
+    }
+    .highlight {
+      background: #e0f7fa;
+      border-left: 5px solid #4dd0e1;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-style: italic;
     }
     table {
       width: 100%;
@@ -46,16 +61,16 @@
       margin-top: 1.5rem;
     }
     th, td {
-      border: 1px solid #ccc;
       padding: 0.75rem;
+      border: 1px solid #ccc;
       text-align: center;
       font-size: 0.95rem;
     }
     th {
-      background-color: #e3f7fb;
+      background-color: #f1faff;
     }
     footer {
-      background-color: #1e1e2f;
+      background: #0f172a;
       color: white;
       text-align: center;
       padding: 2rem;
@@ -66,25 +81,24 @@
 <body>
   <header>
     <h1>Caffeine & The Teenage Heart</h1>
-    <p>Capstone Project by Jasnoor</p>
+    <p>A Capstone Project by Jasnoor</p>
   </header>
 
   <nav>
-    <a href="#intro">Overview</a>
+    <a href="#overview">Overview</a>
     <a href="#data">Data</a>
     <a href="#analysis">Analysis</a>
-    <a href="#literature">Sources</a>
-    <a href="#competencies">Skills</a>
-    <a href="#volunteer">Community</a>
+    <a href="#sources">Sources</a>
+    <a href="#skills">Skills</a>
+    <a href="#volunteer">Volunteering</a>
     <a href="#mentor">Mentor</a>
     <a href="#impact">Impact</a>
   </nav>
 
-  <section id="intro">
+  <section id="overview">
     <h2>Project Overview</h2>
-    <p><strong>Inquiry Question:</strong> How does caffeine consumption affect the human heart, specifically heart rate, blood pressure, and cardiovascular function in teenagers?</p>
-    <p>This project blends science, health, data collection, and digital design. I wanted to understand how something so common — caffeine — affects a part of us that’s always working: the heart. I also wanted to spread awareness to help my peers make healthier choices.</p>
-    <p>As someone who aspires to be a cardiologist, this research built my scientific and observational skills, while letting me explore health education, ethics, and communication.</p>
+    <p><strong>Inquiry Question:</strong> How does caffeine consumption affect teenage heart rate and blood pressure?</p>
+    <p>This project came from my curiosity and career goal to become a cardiologist. I noticed how common caffeine is in teen life — coffee before school, energy drinks after practice — and I wanted to explore its actual effect on a young body. Through real participant tracking and professional guidance, this project came to life as both a scientific study and a community campaign.</p>
   </section>
 
   <section id="data">
@@ -104,48 +118,50 @@
   </section>
 
   <section id="analysis">
-    <h2>Findings & Analysis</h2>
-    <p>Higher doses of caffeine caused stronger increases in both heart rate and systolic blood pressure. Average HR increase was 15 bpm; some reached up to 25 bpm. Systolic BP rose by up to 20 points. Effects included jitteriness, anxiety, energy spikes, and in some cases, dizziness or nausea.</p>
+    <h2>Findings</h2>
+    <p>💡 Higher caffeine doses led to increased heart rate and systolic blood pressure. Energy drinks caused the sharpest spikes (up to +25 bpm and +20 systolic BP), while iced tea had minor changes. Teenagers with lower baseline tolerance experienced shakiness and anxiety.</p>
+    <div class="highlight">"This showed me how easily something we all drink could have real effects on our heart. And we almost never talk about it." — Participant Reflection</div>
   </section>
 
-  <section id="literature">
-    <h2>Literature Review</h2>
+  <section id="sources">
+    <h2>Research Sources</h2>
     <ul>
-      <li><strong>MDPI Journal:</strong> Caffeine increases HR and BP in teens</li>
-      <li><strong>CBS News:</strong> ER cases tied to teen energy drink use</li>
-      <li><strong>Harvard Public Health:</strong> Explained chemical effects of caffeine on the body</li>
-      <li><strong>Journal of Psychosomatic Research:</strong> Long-term risk data on caffeine</li>
+      <li>🧬 MDPI Journal – "Acute Cardiovascular Effects of Energy Drinks in Adolescents"</li>
+      <li>📺 CBS News – Teen ER visits tied to caffeine overuse</li>
+      <li>📚 Harvard Public Health – Caffeine and cardiovascular science</li>
+      <li>📖 Journal of Psychosomatic Research – Long-term BP impact</li>
     </ul>
   </section>
 
-  <section id="competencies">
-    <h2>Core Competencies Demonstrated</h2>
+  <section id="skills">
+    <h2>Core Competencies</h2>
     <ul>
-      <li><strong>Critical Thinking:</strong> Designed real-world observational experiment</li>
-      <li><strong>Digital Literacy:</strong> Built a functional website and analyzed data</li>
-      <li><strong>Communication:</strong> Created visuals, wrote clearly, and shared findings with others</li>
-      <li><strong>Social Responsibility:</strong> Promoted heart health among peers</li>
+      <li>🧠 <strong>Critical Thinking:</strong> Designed and interpreted physiological data</li>
+      <li>💬 <strong>Communication:</strong> Created website, charts, flyers, and survey</li>
+      <li>💻 <strong>Digital Literacy:</strong> Analyzed Google Sheets data and built charts</li>
+      <li>🤝 <strong>Social Responsibility:</strong> Centered safety, ethics, and health awareness</li>
     </ul>
   </section>
 
   <section id="volunteer">
     <h2>Volunteering & Ethics</h2>
-    <p>All volunteers were aged 15–17. They gave consent and used safe, known caffeine doses. I monitored their well-being and encouraged self-awareness about heart rate changes. This project helped raise conversations about mental health and energy drink misuse among teens.</p>
+    <p>I used consent forms, briefed all participants, and kept the environment safe. I will share this with my school community, health class, and possibly turn it into a mini-workshop.</p>
   </section>
 
   <section id="mentor">
-    <h2>Mentorship Reflection</h2>
-    <p>I worked with Ms. Mahnaz Sabouri, a science educator who guided my project timeline, reviewed my research questions, and gave helpful advice when I got stuck. Her support made me more confident in balancing creativity and science.</p>
+    <h2>Mentor Reflection</h2>
+    <p><strong>Mentor:</strong> Ms. Mahnaz Sabouri — a science educator who supported my organization, analysis, and motivation. She reminded me that science needs compassion, clarity, and a voice behind the numbers.</p>
   </section>
 
   <section id="impact">
-    <h2>Final Reflection & Community Impact</h2>
-    <p>This project was about more than numbers. It became a journey to better understand health, education, and how to communicate science in a way that makes a difference. I plan to turn this project into a school campaign — posters, QR-code links to the site, and a video explaining caffeine's effects on teen hearts. I hope this empowers others to be aware, ask questions, and care for their health.</p>
+    <h2>Final Thoughts</h2>
+    <p>This project isn’t just about caffeine — it’s about realizing that even everyday habits affect our health. As a future cardiologist, I want to lead with science and empathy. I hope this capstone opens conversations about heart care, mental alertness, and informed choices for teens everywhere.</p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Jasnoor Kaur | Capstone Project | Heart Science for a Healthier Generation</p>
+    <p>&copy; 2025 Jasnoor Kaur | Capstone Project on Teen Heart Health</p>
   </footer>
 </body>
 </html>
+"""
 
