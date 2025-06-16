@@ -231,7 +231,7 @@
   <section id="mentor">
     <h2>Mentor Reflection</h2>
     <p>
-      I worked closely with Ms. Mahnaz Sabouri, a science educator with experience in physiology and research methods. She helped me design my experiment, taught me how to analyze data properly, and emphasized the importance of clear communication. Her guidance inspired me to pursue further studies in health science and research.
+      I worked closely with Ms. Mahnaz Sabouri, a math educator with experience in research methods. She helped me design my experiment, taught me how to analyze data properly, and emphasized the importance of clear communication. Her guidance inspired me to pursue further studies in health science and research.
     </p>
   </section>
 
